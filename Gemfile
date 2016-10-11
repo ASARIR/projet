@@ -45,4 +45,6 @@ gem 'pg', '~> 0.18.4', group: :production
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+ gem 'vcr', '~> 3.0', '>= 3.0.3'
+
 

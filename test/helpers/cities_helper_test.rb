@@ -1,4 +1,9 @@
 require 'test_helper'
 
-class CitiesHelperTest < ActionView::TestCase
+  
+  
+
+class CityTest < ActiveSupport::TestCase
+
+  
 end
