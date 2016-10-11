@@ -30,7 +30,7 @@ group :development, :test do
 end
 
 # geocoding 
-gem 'nominatim', '~> 0.0.5'
+gem 'nominatim', '~> 0.0.5' 
 
 gem 'pg', '~> 0.18.4', group: :production
 
