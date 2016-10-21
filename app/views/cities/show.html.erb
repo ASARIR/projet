@@ -14,6 +14,27 @@
   <strong>Lon:</strong>
   <%= @city.lon %>
 </p>
+<p>
+  <strong>temperature:</strong>
+  <%= @forecast[:temperature] %>
+</p>
+<p>
+  <strong>summary:</strong>
+  <%= @forecast[:summary] %>
+</p>
+<p>
+  <strong>windSpeed:</strong>
+  <%= @forecast[:windSpeed] %>
+</p>
+<p>
+  <strong>humidity:</strong>
+  <%= @forecast[:humidity] %>
+</p>
+<p>
+  <strong>cloudCover:</strong>
+  <%= @forecast[:cloudCover] %>
+</p>
+
 
 <%= link_to 'Edit', edit_city_path(@city) %> |
 <%= link_to 'Back', cities_path %>

@@ -47,4 +47,6 @@ gem 'pg', '~> 0.18.4', group: :production
 # gem 'debugger', group: [:development, :test]
  gem 'vcr', '~> 3.0', '>= 3.0.3'
 
+gem 'forecast_io', '~> 2.0', '>= 2.0.1'
 
+gem 'typhoeus', '~> 1.1'
