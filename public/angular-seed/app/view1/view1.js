@@ -9,8 +9,12 @@ angular.module('myApp.view1', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', ['$scope',function($scope) {
-  $scope.students = [{name: "bob", surname: "dylan"}]
 
+  .controller('View1Ctrl', ['$scope', '$http', function($scope, $http) {
+    $scope.students = [];
+
+    $http.get('/students.json').success(function(data){
+      $scope.students = data
+  	});
 
 }]);
