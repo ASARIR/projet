@@ -1,7 +1,12 @@
 <p>This is the partial for view 1.</p>
 <ul>
-   <li ng-repeat="students in students">
-     <span>{{students.name}}</span>
-     <p>{{students.surname}}</p>
-   </li>
- </ul>
+   
+  Search : <input ng-model="$ctrl.query" />
+  
+  
+   <li ng-repeat="student in students | filter:$ctrl.query">
+     <span>{{student.name}}</span>
+     <p>{{student.surname}}</p>
+   <!--  <p>test</p>   si on l'ajoute ça n apparait pas dans filter -->
+   </li> 
+</ul>
