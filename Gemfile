@@ -51,3 +51,7 @@ gem 'pg', '~> 0.18.4', group: :production
 gem 'forecast_io', '~> 2.0', '>= 2.0.1'
 
 gem 'typhoeus', '~> 1.1'
+group :test do
+  gem "simplecov"
+  gem "codeclimate-test-reporter", "~> 1.0.0"
+end
