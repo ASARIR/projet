@@ -9,8 +9,8 @@ deploy:
   on:
     repo: ASARIR/projet
 addons:
-code_climate:
-    repo_token: f40dcc641a9142b6074dcc91d791c1c67c03f279db2fa9003d00375e41ec4518
+  code_climate:
+      repo_token: f40dcc641a9142b6074dcc91d791c1c67c03f279db2fa9003d00375e41ec4518
 after_success:
   - bundle exec codeclimate-test-reporter
     
