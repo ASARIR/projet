@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :cities
 
   resources :students
+  get '/auth/github/callback', to: 'sessions#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,19 +1,16 @@
 class CitiesController < ApplicationController
   before_action :set_city, only: [:show, :edit, :update, :destroy]
-
+  
   # GET /cities
   # GET /cities.json
   def index
     @cities = City.all
-    @cities.each do | city |
-      city.forecast_io
-    end
   end
 
   # GET /cities/1
   # GET /cities/1.json
   def show
-    @forecast = @city.forecast_io
+    @weather = @city.weather
   end
 
   # GET /cities/new
@@ -54,7 +51,7 @@ class CitiesController < ApplicationController
       end
     end
   end
-
+  
   # DELETE /cities/1
   # DELETE /cities/1.json
   def destroy
@@ -75,4 +72,5 @@ class CitiesController < ApplicationController
     def city_params
       params.require(:city).permit(:name, :lat, :lon)
     end
+
 end
